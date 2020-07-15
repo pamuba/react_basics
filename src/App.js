@@ -10,13 +10,16 @@ import Greet from './components/Greet';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
 
 
 function App() {
+  const numbers = [1, 2, 3, 4, 5];
   return (
     <div className="App">
+    <NameList numbers={numbers}></NameList>
 
-    <UserGreeting></UserGreeting>
+    {/* <UserGreeting></UserGreeting> */}
 
    {/* <ParentComponent></ParentComponent> */}
 
@@ -32,8 +35,8 @@ function App() {
       {/* <Random name="Bruce" heroName="Batman">
         <p>This is childern props</p>
         <p>This is 2nd childern props</p>
-      </Random>
-      <Random name="Clark" heroName="SuperMan">
+      </Random> */}
+      {/* <Random name="Clark" heroName="SuperMan">
         <button>CLICK</button>
       </Random>
       <Random name="Diana" heroName="Wonder Women"></Random>
