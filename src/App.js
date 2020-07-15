@@ -17,13 +17,31 @@ import RefsDemo from "./components/RefsDemo";
 import LifecycleA from "./components/LifecycleA";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
+import ClickCounerTwo from "./components/ClickCounerTwo";
+import HoverCounterTwo from "./components/HoverCounterTwo";
+import User from "./components/User";
+import Counter1 from "./components/Counter1";
 
 function App() {
   const numbers = [1, 2, 3, 4, 5];
   return (
     <div className="App">
-      <ClickCounter></ClickCounter>
-      <HoverCounter></HoverCounter>
+
+      <Counter1>
+        {(count, incrementCount) => <ClickCounerTwo count={count} 
+        incrementCount={incrementCount}></ClickCounerTwo>}
+      </Counter1>
+
+      <Counter1> 
+        {(count, incrementCount) => <HoverCounterTwo count={count} 
+        incrementCount={incrementCount}></HoverCounterTwo>}
+      </Counter1>
+
+      {/* <ClickCounerTwo></ClickCounerTwo>
+      <HoverCounterTwo></HoverCounterTwo>
+      <User render={(isLoggedIn) => isLoggedIn ? 'Will':'Guest'}></User> */}
+      {/* <ClickCounter></ClickCounter> */}
+      {/* <HoverCounter></HoverCounter> */}
 
       {/* <LifecycleA></LifecycleA> */}
 
