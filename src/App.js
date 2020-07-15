@@ -1,42 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
-import Random from './components/Greet'
-import Welcome from './components/Welcome'
-import Message from './components/Message';
-import Counter from './components/Counter';
-import Greet from './components/Greet';
-import EventBind from './components/EventBind';
-import ParentComponent from './components/ParentComponent';
-import UserGreeting from './components/UserGreeting';
-import NameList from './components/NameList';
-import Form from './components/Form';
-import ParentComp from './components/ParentComp';
-
+import Random from "./components/Greet";
+import Welcome from "./components/Welcome";
+import Message from "./components/Message";
+import Counter from "./components/Counter";
+import Greet from "./components/Greet";
+import EventBind from "./components/EventBind";
+import ParentComponent from "./components/ParentComponent";
+import UserGreeting from "./components/UserGreeting";
+import NameList from "./components/NameList";
+import Form from "./components/Form";
+import ParentComp from "./components/ParentComp";
+import RefsDemo from "./components/RefsDemo";
+import LifecycleA from "./components/LifecycleA";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
 
 function App() {
   const numbers = [1, 2, 3, 4, 5];
   return (
     <div className="App">
+      <ClickCounter></ClickCounter>
+      <HoverCounter></HoverCounter>
 
-    <ParentComp></ParentComp>
+      {/* <LifecycleA></LifecycleA> */}
 
-    {/* <Form></Form> */}
-    {/* <NameList numbers={numbers}></NameList> */}
+      {/* <RefsDemo></RefsDemo> */}
+      {/* <ParentComp></ParentComp> */}
 
-    {/* <UserGreeting></UserGreeting> */}
+      {/* <Form></Form> */}
+      {/* <NameList numbers={numbers}></NameList> */}
 
-   {/* <ParentComponent></ParentComponent> */}
+      {/* <UserGreeting></UserGreeting> */}
 
-    {/* <EventBind></EventBind> */}
+      {/* <ParentComponent></ParentComponent> */}
 
-    {/* <Greet name="Diana" heroName="Wonder Women"></Greet> */}
+      {/* <EventBind></EventBind> */}
 
-    {/* <Counter></Counter> */}
+      {/* <Greet name="Diana" heroName="Wonder Women"></Greet> */}
 
+      {/* <Counter></Counter> */}
 
-    {/* <Message></Message> */}
+      {/* <Message></Message> */}
 
       {/* <Random name="Bruce" heroName="Batman">
         <p>This is childern props</p>
