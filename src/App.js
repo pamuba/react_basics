@@ -21,13 +21,22 @@ import ClickCounerTwo from "./components/ClickCounerTwo";
 import HoverCounterTwo from "./components/HoverCounterTwo";
 import User from "./components/User";
 import Counter1 from "./components/Counter1";
+import ComponentC from "./components/ComponentC";
+import { UserProvider } from "./components/userContext";
+import HookCounter from "./components/HookCounter";
 
 function App() {
   const numbers = [1, 2, 3, 4, 5];
   return (
     <div className="App">
 
-      <Counter1>
+     <HookCounter></HookCounter>
+
+     {/* <UserProvider value="Hello World">
+      <ComponentC />
+     </UserProvider> */}
+
+      {/* <Counter1>
         {(count, incrementCount) => <ClickCounerTwo count={count} 
         incrementCount={incrementCount}></ClickCounerTwo>}
       </Counter1>
@@ -35,7 +44,7 @@ function App() {
       <Counter1> 
         {(count, incrementCount) => <HoverCounterTwo count={count} 
         incrementCount={incrementCount}></HoverCounterTwo>}
-      </Counter1>
+      </Counter1> */}
 
       {/* <ClickCounerTwo></ClickCounerTwo>
       <HoverCounterTwo></HoverCounterTwo>
