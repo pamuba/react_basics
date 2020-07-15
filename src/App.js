@@ -12,6 +12,7 @@ import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
 import Form from './components/Form';
+import ParentComp from './components/ParentComp';
 
 
 function App() {
@@ -19,7 +20,9 @@ function App() {
   return (
     <div className="App">
 
-    <Form></Form>
+    <ParentComp></ParentComp>
+
+    {/* <Form></Form> */}
     {/* <NameList numbers={numbers}></NameList> */}
 
     {/* <UserGreeting></UserGreeting> */}
