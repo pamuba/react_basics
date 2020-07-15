@@ -11,13 +11,16 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
+import Form from './components/Form';
 
 
 function App() {
   const numbers = [1, 2, 3, 4, 5];
   return (
     <div className="App">
-    <NameList numbers={numbers}></NameList>
+
+    <Form></Form>
+    {/* <NameList numbers={numbers}></NameList> */}
 
     {/* <UserGreeting></UserGreeting> */}
 
